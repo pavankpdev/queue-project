@@ -1,0 +1,90 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color: #ccc;
+	background-color: #1a1a1a;
+	font-synthesis: none;
+	email-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-email-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+}
+
+#app {
+	max-width: 1280px;
+	margin: 0 auto;
+	email-align: center;
+}
+
+img {
+	margin-bottom: 1.5rem;
+}
+
+img:hover {
+	filter: drop-shadow(0 0 2em #673ab8aa);
+}
+
+section > form {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+input[type="email"] {
+	background-color: #333; /* Dark background for dark mode */
+	color: #fff; /* Light email color for contrast */
+	border: 2px solid #555; /* Slightly lighter border for subtle contrast */
+	padding: 10px; /* Adequate padding for ease of use */
+	border-radius: 5px; /* Rounded corners for a modern look */
+	outline: none; /* Removes the default focus outline */
+	transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for interactions */
+	width: 100%;
+}
+
+input[type="email"]:focus {
+	border-color: #06D6A0; /* Highlighted border color on focus */
+	box-shadow: 0 0 0 3px rgba(6, 214, 160, 0.2); /* Soft glow effect for focus */
+}
+
+input[type="email"]:hover {
+	border-color: #98c1d9; /* Slightly lighter border on hover for feedback */
+}
+
+/* Placeholder styling */
+input[type="email"]::placeholder {
+	color: #bbb; /* Lighter placeholder email for contrast and readability */
+}
+
+button {
+	background-color: #5D3FD3; /* Vibrant purple background for the button */
+	color: #FFFFFF; /* White text color for contrast */
+	border: none; /* No border for a sleek look */
+	padding: 10px 20px; /* Comfortable padding for ease of interaction */
+	border-radius: 5px; /* Rounded corners for a modern look */
+	cursor: pointer; /* Cursor changes to indicate clickable area */
+	outline: none; /* Removes the default focus outline */
+	transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Smooth transitions for feedback */
+}
+
+button:hover {
+	background-color: #7C5EFA; /* Lighter purple on hover for visual feedback */
+}
+
+button:focus {
+	box-shadow: 0 0 0 2px rgba(125, 95, 255, 0.5); /* Subtle glow effect for focus, enhancing accessibility */
+}
+
+button:active {
+	transform: scale(0.96); /* Scales down on click, providing tactile feedback */
+}
